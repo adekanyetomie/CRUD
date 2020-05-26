@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3> {{toy.name}} Information</h3>
+    <p> {{toy.name}} is a very insigtful toy game</p>
+    <a href=" {{url_for('index')}} ">See all toys</a>
+    <a href=" {{url_for('edit', id=toy.id)}} ">Edit this toy</a>
+
+{% endblock %}
